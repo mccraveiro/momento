@@ -6,7 +6,7 @@ Immutable moment.js with composable methods and partial application of data
 
 ```js
 const nextWeek = pipe(
-  fparse('DD/MM/YYYY', __),
+  parse('DD/MM/YYYY', __),
   add(7, 'days', __),
   format('DD/MM/YYYY', __)
 )

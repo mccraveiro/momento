@@ -18,16 +18,16 @@ const curry = fn => (...args) => {
 }
 
 const now = () => moment()
-const parse = data => moment(data)
-const fparse = curry((format, data) => moment(data, format))
+const parseISO = data => moment(data)
+const parse = curry((format, data) => moment(data, format))
 const format = curry((config, data) => data.format(config))
 const add = curry((amount, key, data) => data.clone().add(amount, key))
 
 module.exports = {
   __,
   now,
+  parseISO,
   parse,
-  fparse,
   format,
   add,
 }
