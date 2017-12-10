@@ -7,18 +7,21 @@ const isPlaceholder = x =>
 
 const __ = { '@@functional/placeholder': true }
 
-const curry2 = (fn) => (arg1, arg2) => {
-  if (isPlaceholder(arg2)) {
-    return fn.bind(null, arg1)
+const curry = fn => (...args) => {
+  const data = args.slice(-1)[0]
+
+  if (isPlaceholder(data)) {
+    return fn.bind(null, ...args.slice(0, -1))
   }
 
-  return fn(arg1, arg2)
+  return fn(...args)
 }
 
 const now = () => moment()
-const parse = value => moment(value)
-const fparse = curry2((format, value) => moment(value, format))
-const format = curry2((config, value) => value.format(config))
+const parse = data => moment(data)
+const fparse = curry((format, data) => moment(data, format))
+const format = curry((config, data) => data.format(config))
+const add = curry((amount, key, data) => data.clone().add(amount, key))
 
 module.exports = {
   __,
@@ -26,4 +29,5 @@ module.exports = {
   parse,
   fparse,
   format,
+  add,
 }
