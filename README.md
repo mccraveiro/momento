@@ -2,6 +2,18 @@
 
 Immutable moment.js with composable functions and partial application of data
 
+## Example with Ramda pipe
+
+```js
+const nextWeek = pipe(
+  parse('DD/MM/YYYY', __),
+  add(7, 'days', __),
+  format('DD/MM/YYYY', __)
+)
+
+nextWeek('10/12/2017')
+```
+
 ## Functions
 
 ### add
@@ -68,14 +80,6 @@ Same as moment.unix()
 parseUnix(752041500)
 ```
 
-## Example with Ramda pipe
+## Missing a function?
 
-```js
-const nextWeek = pipe(
-  parse('DD/MM/YYYY', __),
-  add(7, 'days', __),
-  format('DD/MM/YYYY', __)
-)
-
-nextWeek('10/12/2017')
-```
+Fell free to send a Pull Request! :heart:
