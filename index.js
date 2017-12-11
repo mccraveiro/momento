@@ -23,13 +23,15 @@ const parseUnix = data => moment.unix(data)
 const parse = curry((format, data) => moment(data, format))
 const format = curry((config, data) => data.format(config))
 const add = curry((amount, key, data) => data.clone().add(amount, key))
+const getMilliseconds = data => data.milliseconds()
 
 module.exports = {
   __,
+  add,
+  format,
+  getMilliseconds,
   now,
+  parse,
   parseISO,
   parseUnix,
-  parse,
-  format,
-  add,
 }

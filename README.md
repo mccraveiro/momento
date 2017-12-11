@@ -20,6 +20,14 @@ Same as moment.format()
 format('DD/MM/YYYY', now())
 ```
 
+### getMilliseconds
+
+Same as moment.milliseconds()
+
+```js
+getMilliseconds(now())
+```
+
 ### now
 
 Same as moment() without arguments
