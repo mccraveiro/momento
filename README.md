@@ -57,7 +57,7 @@ parse('DD/MM/YYYY', '31/10/1993')
 Same as moment() with one argument
 
 ```js
-parse('1993-10-31')
+parseISO('1993-10-31')
 ```
 
 ### parseUnix
