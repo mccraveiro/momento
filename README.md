@@ -28,6 +28,14 @@ Same as moment.milliseconds()
 getMilliseconds(now())
 ```
 
+### getSeconds
+
+Same as moment.seconds()
+
+```js
+getSeconds(now())
+```
+
 ### now
 
 Same as moment() without arguments

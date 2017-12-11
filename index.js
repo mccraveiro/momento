@@ -24,12 +24,14 @@ const parse = curry((format, data) => moment(data, format))
 const format = curry((config, data) => data.format(config))
 const add = curry((amount, key, data) => data.clone().add(amount, key))
 const getMilliseconds = data => data.milliseconds()
+const getSeconds = data => data.seconds()
 
 module.exports = {
   __,
   add,
   format,
   getMilliseconds,
+  getSeconds,
   now,
   parse,
   parseISO,
