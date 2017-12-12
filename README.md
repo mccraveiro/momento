@@ -12,9 +12,9 @@ $ npm install momento
 
 ```js
 const nextWeek = pipe(
-  parse('DD/MM/YYYY', __),
-  add(7, 'days', __),
-  format('DD/MM/YYYY', __)
+  parse('DD/MM/YYYY'),
+  add(7, 'days'),
+  format('DD/MM/YYYY')
 )
 
 nextWeek('10/12/2017')
