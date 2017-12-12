@@ -80,6 +80,14 @@ Same as moment.unix()
 parseUnix(752041500)
 ```
 
+### subtract
+
+Same as moment.subtract()
+
+```js
+subtract(2, 'days', now())
+```
+
 ## Missing a function?
 
 Fell free to send a Pull Request! :heart:
