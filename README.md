@@ -5,7 +5,11 @@ Immutable moment.js with composable functions and partial application of data
 ## Installation
 
 ```
-$ npm install momento
+$ yarn add momento
+```
+or
+```
+$ npm install momento --save
 ```
 
 ## Example with Ramda pipe
