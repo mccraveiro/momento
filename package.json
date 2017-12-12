@@ -1,5 +1,5 @@
 {
-  "name": "functional-moment",
+  "name": "momento",
   "version": "1.0.0",
   "description": "Functional moment.js",
   "main": "index.js",
@@ -7,7 +7,9 @@
     "test": "ava"
   },
   "keywords": [
-    "moment"
+    "moment",
+    "momentjs",
+    "functional-programming"
   ],
   "author": "Mateus Craveiro <mccraveiro@gmail.com>",
   "license": "MIT",

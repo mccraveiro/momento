@@ -1,4 +1,4 @@
-# Functional moment.js
+# Momento
 
 Immutable moment.js with composable functions and partial application of data
 
