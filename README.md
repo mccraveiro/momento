@@ -2,6 +2,12 @@
 
 Immutable moment.js with composable functions and partial application of data
 
+## Installation
+
+```
+$ npm install momento
+```
+
 ## Example with Ramda pipe
 
 ```js
