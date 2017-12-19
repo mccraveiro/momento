@@ -13,7 +13,7 @@ $ npm install momento
 ```js
 const nextWeek = pipe(
   parse('DD/MM/YYYY'),
-  add(7, 'days'),
+  add('days', 7),
   format('DD/MM/YYYY')
 )
 
@@ -27,7 +27,7 @@ nextWeek('10/12/2017')
 Same as moment.add()
 
 ```js
-add(2, 'days', now())
+add('days', 2, now())
 ```
 
 ### format
@@ -91,7 +91,7 @@ parseUnix(752041500)
 Same as moment.subtract()
 
 ```js
-subtract(2, 'days', now())
+subtract('days', 2, now())
 ```
 
 ## Missing a function?
